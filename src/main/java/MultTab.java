@@ -12,9 +12,8 @@ import java.util.concurrent.TimeUnit;
 
 public class MultTab {
     public static void openUrl() {
-        WebDriver driver;
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriver driver  = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();

@@ -24,9 +24,8 @@ public class ImageComparison {
         }
 
         private static   void captureImage() {
-            WebDriver driver;
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.get("https://google.com");

@@ -10,9 +10,8 @@ import java.util.concurrent.TimeUnit;
 
 public class IframeHandle {
     public static void main(String[] args) throws InterruptedException {
-        WebDriver driver;
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://jqueryui.com/droppable/");
